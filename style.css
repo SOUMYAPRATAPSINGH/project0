@@ -76,7 +76,11 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     justify-self: end;
-    
+    margin-left: 300px;
+  }
+
+  .navbar ul li{
+    margin-top: 5px;
   }
   
   .nav-item a {
@@ -86,7 +90,7 @@
     text-decoration: none;
     transition: color 0.3s ease-out;
   }
-  
+
   .nav-item a:hover {
     color: #3498db;
   }
@@ -134,53 +138,32 @@
   
   /* SEARCH FUNCTION */
   
-  #search-icon {
-    font-size: 0.9rem;
-    margin-top: 3px;
-    margin-left: 15px;
-    transition: color 0.3s ease-out;
+  .search-bar{
+    display: flex;
+    background-color: white;
+    margin-right: 20px;
+    border-top-left-radius: 1px solid #3498db;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 4px 5px #3498db;
+    border-left: 1px solid #3498db;
+    border-top: 1px solid #3498db;
   }
-  
-  #search-icon:hover {
-    color: #3498db;
-    cursor: pointer;
+  .search-input {
+    margin-right: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+    width: 100px;
   }
 
-  
-  .search {
-    transform: translate(-35%);
-    -webkit-transform: translate(-35%);
-    transition: transform 0.7s ease-in-out;
-    color: #3498db;
+  .search-bar img{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
   }
-  
-  .no-search {
-    transform: translate(0);
-    transition: transform 0.7s ease-in-out;
-  }
-  
-  .search-input {
-    position: absolute;
-    top: -4px;
-    right: -125px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.6s ease;
-  }
-  
-  .search-input .active {
-    opacity: 1;
-    z-index: 0;
-    
-  }
-  
-   input  {
-    border: 0;
-    border-left: 1px solid #ccc;
-    border-radius: 0; /* FOR SAFARI */
-    outline:0;
-    padding:5px;
-  } 
   
   /* MOBILE MENU & ANIMATION */
   
