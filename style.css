@@ -76,7 +76,8 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     justify-self: end;
-    margin-left: 300px;
+    margin-left: 100px;
+    margin-right: 30px;
   }
 
   .navbar ul li{
@@ -141,7 +142,7 @@
   .search-bar{
     display: flex;
     background-color: white;
-    margin-right: 20px;
+    margin-right: 0px;
     border-top-left-radius: 1px solid #3498db;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 14px;
@@ -159,10 +160,13 @@
     width: 100px;
   }
 
-  .search-bar img{
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
+  .search-bar .fa{
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0px;
+      margin-right: 10px;
   }
   
   /* MOBILE MENU & ANIMATION */
@@ -247,7 +251,7 @@
   
     /* Mobile Devices - Phones/Tablets */
   
-  @media only screen and (max-width: 720px) { 
+  @media only screen and (max-width: 880px) { 
     .features {
       flex-direction: column;
       padding: 50px;
